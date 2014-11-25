@@ -2,8 +2,7 @@
 
 angular
   .module('app')
-  .controller('TurnipCtrl', ['$scope', '$state', 'Turnip', 
-              function($scope, $state, Profiles) {
-    
+  .controller('TurnipCtrl', ['$scope', '$state', 'Profile', 
+              function($scope, $state, Profile) {
 
   }]);
