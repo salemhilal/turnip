@@ -1,0 +1,15 @@
+{
+  "name": "Profile",
+  "plural": "Profiles",
+  "base": "PersistedModel",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
