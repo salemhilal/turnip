@@ -71,8 +71,6 @@ for (var s in config) {
 }
 
 app.get('/auth/account', function(req, res) {
-  console.log('User', req.user);
-  console.log("\n\n\nAccess token", req.signedCookies);
   res.cookie('user-access-token', req.signedCookies['access_token']);
   res.cookie('user-id', req.user.id);
   res.redirect('/turnip/registration');
