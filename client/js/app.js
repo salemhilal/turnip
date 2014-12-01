@@ -14,6 +14,10 @@ angular
         url: '/turnip',
         templateUrl: 'js/turnip/templates/turnip.html',
         controller: 'TurnipCtrl'
+      }).state('turnip2', {
+        url: '/turnip2',
+        templateUrl: 'js/turnip/templates/turnip.html',
+        controller: 'TurnipCtrl'
       });
 
     // Map everything to 'turnip'

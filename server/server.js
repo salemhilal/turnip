@@ -1,9 +1,8 @@
-var loopback = require('loopback');
-var boot = require('loopback-boot');
+var loopback = require('loopback'),
+    boot = require('loopback-boot'),
+    app = module.exports = loopback();
 
-var app = module.exports = loopback();
-
-// Passport configurators..
+// Passport configurators
 var loopbackPassport = require('loopback-component-passport');
 var PassportConfigurator = loopbackPassport.PassportConfigurator;
 var passportConfigurator = new PassportConfigurator(app);
@@ -34,10 +33,6 @@ boot(app, __dirname);
 var path = require('path');
 app.use(loopback.static(path.resolve(__dirname, '../client')));
 
-app.use(function(req, res) {
-    res.sendFile(path.resolve(__dirname, '../client/index.html'));
-});
-
 passportConfigurator.init();
 
 passportConfigurator.setupModels({
@@ -53,10 +48,11 @@ for (var s in config) {
 	passportConfigurator.configureProvider(s, c);
 }
 
-/* TODO (for salem) create user profile page */
-// app.get('/auth/account', function (req, res, next) {
-    // NOTE: I think it's safe for the client app to handle this.  
-// });
+// Any routes that don't match should be passed to the client.
+// This needs to be after all other routes, especially the API. 
+app.use(function(req, res) {
+    res.sendFile(path.resolve(__dirname, '../client/index.html'));
+});
 
 // Requests that get this far won't be handled
 // by any middleware. Convert them into a 404 error
