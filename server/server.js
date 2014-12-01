@@ -34,6 +34,10 @@ boot(app, __dirname);
 var path = require('path');
 app.use(loopback.static(path.resolve(__dirname, '../client')));
 
+app.use(function(req, res) {
+    res.sendFile(path.resolve(__dirname, '../client/index.html'));
+});
+
 passportConfigurator.init();
 
 passportConfigurator.setupModels({
@@ -50,9 +54,9 @@ for (var s in config) {
 }
 
 /* TODO (for salem) create user profile page */
-app.get('/auth/account', function (req, res, next) {
-
-});
+// app.get('/auth/account', function (req, res, next) {
+    // NOTE: I think it's safe for the client app to handle this.  
+// });
 
 // Requests that get this far won't be handled
 // by any middleware. Convert them into a 404 error
