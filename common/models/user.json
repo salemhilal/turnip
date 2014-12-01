@@ -3,9 +3,9 @@
   "plural": "users",
   "base": "User",
   "relations": {
-    "accessTokens": {
+    "SccessTokens": {
       "type": "hasMany",
-      "model": "accessToken",
+      "model": "AccessToken",
       "foreignKey": "userId"
     },
     "identities": {

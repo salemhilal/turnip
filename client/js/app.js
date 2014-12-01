@@ -4,6 +4,7 @@ angular
   .module('app', [
     'lbServices',
     'ui.router',
+    'ngCookies'
   ])
   .config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
           function($stateProvider, $routeProvider, $locationProvider) {
@@ -15,15 +16,15 @@ angular
         templateUrl: 'js/turnip/templates/turnip.html',
         controller: 'TurnipCtrl'
       })
-      .state('turnip2', {
-        url: '/turnip/turnip2', 
-        templateUrl: 'js/turnip/templates/turnip2.html',
-        controller: 'TurnipCtrl'
+      .state('registration', {
+        url: '/turnip/registration', 
+        templateUrl: 'js/turnip/templates/registration.html',
+        controller: 'RegistrationCtrl'
       });
 
     // $routeProvider.when('/auth/facebook', 'facebookAuth')
 
-    // Map everything to 'turnip'
+    // Map everything to 'home'
     $routeProvider.otherwise('/turnip/home');
 
     // Use HTML5 mode
