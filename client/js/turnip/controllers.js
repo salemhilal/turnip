@@ -10,8 +10,8 @@ angular
               ['$scope', '$state', 'User', 'LoopBackAuth', '$cookies',
               function($scope, $state, User, LoopBackAuth, $cookies) {
                 console.log($cookies);
-    LoopBackAuth.currentUserId = $cookies['user_id'];
-    LoopBackAuth.accessTokenId = $cookies['access-token'];
+    LoopBackAuth.currentUserId = $cookies['user-id'];
+    LoopBackAuth.accessTokenId = $cookies['user-access-token'];
     LoopBackAuth.rememberMe = false;
     LoopBackAuth.save();
     console.log(LoopBackAuth);

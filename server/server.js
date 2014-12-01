@@ -50,7 +50,7 @@ app.use(loopback.session({
 passportConfigurator.init();
 
 passportConfigurator.setupModels({
-  userModel: app.models.User,
+  userModel: app.models.user,
   userIdentityModel: app.models.userIdentity,
   userCredentialModel: app.models.userCredential
 });
@@ -72,10 +72,9 @@ for (var s in config) {
 
 app.get('/auth/account', function(req, res) {
   console.log('User', req.user);
-  // console.log("\n\n\nAccess token", req.signedCookies);
-  // res.cookie('access-token', req.signedCookies['access_token']);
-  res.cookie('user_id', req.user.id);
-  console.log('user_id cookie set to', req.user.id);
+  console.log("\n\n\nAccess token", req.signedCookies);
+  res.cookie('user-access-token', req.signedCookies['access_token']);
+  res.cookie('user-id', req.user.id);
   res.redirect('/turnip/registration');
 });
 
@@ -86,6 +85,7 @@ app.get('/auth/account', function(req, res) {
 app.get('*', function(req, res) {
   res.sendFile(path.resolve(__dirname, '../client/index.html'));
 });
+
 
 // Requests that get this far won't be handled
 // by any middleware. Convert them into a 404 error
