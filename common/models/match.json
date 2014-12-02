@@ -1,0 +1,32 @@
+{
+  "name": "Match",
+  "plural": "Matches",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "u1_approve": {
+      "type": "boolean",
+      "required": true
+    },
+    "u2_approve": {
+      "type": "boolean",
+      "required": true
+    },
+    "u1_count": {
+      "type": "number",
+      "required": true
+    },
+    "u2_count": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -2,6 +2,8 @@
   "name": "user",
   "plural": "users",
   "base": "User",
+  "properties": {},
+  "validations": [],
   "relations": {
     "SccessTokens": {
       "type": "hasMany",
@@ -17,9 +19,14 @@
       "type": "hasMany",
       "model": "userCredential",
       "foreignKey": "userId"
+    },
+    "match": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": "userId",
+      "through": "Match"
     }
   },
-  "validations": [],
   "acls": [],
   "methods": []
 }
