@@ -62,8 +62,6 @@ passportConfigurator.setupModels({
 var path = require('path');
 app.use(loopback.static(path.resolve(__dirname, '../client')));
 
-
-// passportConfigurator.setupModels();
 for (var s in config) {
 	var c = config[s];
 	c.session = c.session !== false;
@@ -77,8 +75,8 @@ app.get('/auth/account', function(req, res) {
 });
 
 // Any routes that don't match should be passed to the client.
-// This needs to be after all other routes, especially the API. 
-// We need the /app prefix so that real things, like /auth, 
+// This needs to be after all other routes, especially the API.
+// We need the /app prefix so that real things, like /auth,
 // don't get caught by the html5 router.
 app.get('*', function(req, res) {
   res.sendFile(path.resolve(__dirname, '../client/index.html'));

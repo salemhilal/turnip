@@ -6,6 +6,10 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
