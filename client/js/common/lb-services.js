@@ -147,7 +147,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
           url: urlBase + "/userCredentials/:id/exists",
@@ -343,7 +343,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
           url: urlBase + "/userCredentials/count",
@@ -579,7 +579,7 @@ module.factory(
          *
          *  - `id` – `{*}` - UserCredential id
          *
-         *  - `refresh` – `{boolean=}` - 
+         *  - `refresh` – `{boolean=}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -737,7 +737,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
           url: urlBase + "/userIdentities/:id/exists",
@@ -933,7 +933,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
           url: urlBase + "/userIdentities/count",
@@ -1169,7 +1169,7 @@ module.factory(
          *
          *  - `id` – `{*}` - UserIdentity id
          *
-         *  - `refresh` – `{boolean=}` - 
+         *  - `refresh` – `{boolean=}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -1254,9 +1254,9 @@ module.factory(
          *
          * The response body contains properties of the AccessToken created on login.
          * Depending on the value of `include` parameter, the body may contain additional properties:
-         * 
+         *
          *   - `user` - `{User}` - Data of the currently logged in user. (`include=user`)
-         * 
+         *
          *
          */
         "login": {
@@ -1329,11 +1329,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `uid` – `{string}` - 
+         *  - `uid` – `{string}` -
          *
-         *  - `token` – `{string}` - 
+         *  - `token` – `{string}` -
          *
-         *  - `redirect` – `{string}` - 
+         *  - `redirect` – `{string}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -1449,7 +1449,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `` – `{undefined=}` - 
+         *  - `` – `{undefined=}` -
          */
         "prototype$__destroyById__accessTokens": {
           url: urlBase + "/Users/:id/accessTokens/:fk",
@@ -1508,7 +1508,7 @@ module.factory(
          *
          *  - `id` – `{*}` - User id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -1625,7 +1625,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "prototype$__count__accessTokens": {
           url: urlBase + "/Users/:id/accessTokens/count",
@@ -1733,7 +1733,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
           url: urlBase + "/Users/:id/exists",
@@ -1929,7 +1929,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
           url: urlBase + "/Users/count",
@@ -2263,9 +2263,9 @@ module.factory(
          *
          * The response body contains properties of the AccessToken created on login.
          * Depending on the value of `include` parameter, the body may contain additional properties:
-         * 
+         *
          *   - `user` - `{User}` - Data of the currently logged in user. (`include=user`)
-         * 
+         *
          *
          */
         "login": {
@@ -2338,11 +2338,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `uid` – `{string}` - 
+         *  - `uid` – `{string}` -
          *
-         *  - `token` – `{string}` - 
+         *  - `token` – `{string}` -
          *
-         *  - `redirect` – `{string}` - 
+         *  - `redirect` – `{string}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2583,7 +2583,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
           url: urlBase + "/users/:id/exists",
@@ -2779,7 +2779,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
           url: urlBase + "/users/count",
@@ -3066,7 +3066,7 @@ module.factory(
          *
          *  - `id` – `{*}` - User id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3116,7 +3116,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         R.identities.count = function() {
           var TargetResource = $injector.get("UserIdentity");
@@ -3220,7 +3220,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `` – `{undefined=}` - 
+         *  - `` – `{undefined=}` -
          */
         R.identities.destroyById = function() {
           var TargetResource = $injector.get("UserIdentity");
@@ -3331,7 +3331,7 @@ module.factory(
          *
          *  - `id` – `{*}` - User id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3381,7 +3381,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         R.credentials.count = function() {
           var TargetResource = $injector.get("UserCredential");
@@ -3485,7 +3485,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `` – `{undefined=}` - 
+         *  - `` – `{undefined=}` -
          */
         R.credentials.destroyById = function() {
           var TargetResource = $injector.get("UserCredential");
@@ -3571,512 +3571,6 @@ module.factory(
 
     return R;
   }]);
-
-/**
- * @ngdoc object
- * @name lbServices.Profile
- * @header lbServices.Profile
- * @object
- *
- * @description
- *
- * A $resource object for interacting with the `Profile` model.
- *
- * ## Example
- *
- * See
- * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
- * for an example of using this object.
- *
- */
-module.factory(
-  "Profile",
-  ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
-    var R = Resource(
-      urlBase + "/Profiles/:id",
-      { 'id': '@id' },
-      {
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#create
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Create a new instance of the model and persist it into the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *   This method does not accept any parameters.
-         *   Supply an empty object or omit this argument altogether.
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        "create": {
-          url: urlBase + "/Profiles",
-          method: "POST",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#upsert
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Update an existing model instance or insert a new one into the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *   This method does not accept any parameters.
-         *   Supply an empty object or omit this argument altogether.
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        "upsert": {
-          url: urlBase + "/Profiles",
-          method: "PUT",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#exists
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Check whether a model instance exists in the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - Model id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * Data properties:
-         *
-         *  - `exists` – `{boolean=}` - 
-         */
-        "exists": {
-          url: urlBase + "/Profiles/:id/exists",
-          method: "GET",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#findById
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Find a model instance by id from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - Model id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        "findById": {
-          url: urlBase + "/Profiles/:id",
-          method: "GET",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#find
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Find all instances of the model matched by filter from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `filter` – `{object=}` - Filter defining fields, where, orderBy, offset, and limit
-         *
-         * @param {function(Array.<Object>,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Array.<Object>} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        "find": {
-          url: urlBase + "/Profiles",
-          method: "GET",
-          isArray: true,
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#findOne
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Find first instance of the model matched by filter from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `filter` – `{object=}` - Filter defining fields, where, orderBy, offset, and limit
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        "findOne": {
-          url: urlBase + "/Profiles/findOne",
-          method: "GET",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#updateAll
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Update instances of the model matched by where from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `where` – `{object=}` - Criteria to match model instances
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        "updateAll": {
-          url: urlBase + "/Profiles/update",
-          method: "POST",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#deleteById
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Delete a model instance by id from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - Model id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        "deleteById": {
-          url: urlBase + "/Profiles/:id",
-          method: "DELETE",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#count
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Count instances of the model matched by where from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `where` – `{object=}` - Criteria to match model instances
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * Data properties:
-         *
-         *  - `count` – `{number=}` - 
-         */
-        "count": {
-          url: urlBase + "/Profiles/count",
-          method: "GET",
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#prototype$updateAttributes
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Update attributes for a model instance and persist it into the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        "prototype$updateAttributes": {
-          url: urlBase + "/Profiles/:id",
-          method: "PUT",
-        },
-      }
-    );
-
-
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#updateOrCreate
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Update an existing model instance or insert a new one into the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *   This method does not accept any parameters.
-         *   Supply an empty object or omit this argument altogether.
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Profile` object.)
-         * </em>
-         */
-        R["updateOrCreate"] = R["upsert"];
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#update
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Update instances of the model matched by where from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `where` – `{object=}` - Criteria to match model instances
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R["update"] = R["updateAll"];
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#destroyById
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Delete a model instance by id from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - Model id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R["destroyById"] = R["deleteById"];
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Profile#removeById
-         * @methodOf lbServices.Profile
-         *
-         * @description
-         *
-         * Delete a model instance by id from the data source
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - Model id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R["removeById"] = R["deleteById"];
-
-
-    /**
-    * @ngdoc property
-    * @name lbServices.Profile#modelName
-    * @propertyOf lbServices.Profile
-    * @description
-    * The name of the model represented by this $resource,
-    * i.e. `Profile`.
-    */
-    R.modelName = "Profile";
-
-
-    return R;
-  }]);
-
 
 module
   .factory('LoopBackAuth', function() {

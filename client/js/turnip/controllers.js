@@ -2,11 +2,11 @@
 
 angular
   .module('app')
-  .controller('TurnipCtrl', ['$scope', '$state', 'Profile', 
-              function($scope, $state, Profile) {
+  .controller('TurnipCtrl', ['$scope', '$state',
+              function($scope, $state) {
 
   }])
-  .controller('RegistrationCtrl', 
+  .controller('RegistrationCtrl',
               ['$scope', '$state', 'User', 'LoopBackAuth', '$cookies',
               function($scope, $state, User, LoopBackAuth, $cookies) {
                 console.log($cookies);
