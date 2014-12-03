@@ -7,14 +7,18 @@ angular
 
   }])
   .controller('RegistrationCtrl',
-              ['$scope', '$state', 'User', 'LoopBackAuth', '$cookies',
-              function($scope, $state, User, LoopBackAuth, $cookies) {
+              ['$scope', '$state', 'User', 'LoopBackAuth', '$cookies', '$http',
+              function($scope, $state, User, LoopBackAuth, $cookies, $http) {
                 console.log($cookies);
     LoopBackAuth.currentUserId = $cookies['user-id'];
     LoopBackAuth.accessTokenId = $cookies['user-access-token'];
     LoopBackAuth.rememberMe = false;
     LoopBackAuth.save();
     console.log(LoopBackAuth);
+
+    $http.get('/loggedin')
+      .success(function(data) {console.log('logged in', data);})
+      .error(function(data) {console.error('not logged in', data);});
 
     User.getCurrent(function(userData) {
       console.log(userData);

@@ -68,10 +68,16 @@ for (var s in config) {
 	passportConfigurator.configureProvider(s, c);
 }
 
+// Handles what to do once the user has logged in
 app.get('/auth/account', function(req, res) {
   res.cookie('user-access-token', req.signedCookies['access_token']);
   res.cookie('user-id', req.user.id);
   res.redirect('/turnip/registration');
+});
+
+// Convenience endpoint to help with keeping users logged in
+app.get('/loggedin', function(req, res) {
+  if(req.user) { res.send('true'); } else { res.send('false'); }
 });
 
 // Any routes that don't match should be passed to the client.
@@ -81,7 +87,6 @@ app.get('/auth/account', function(req, res) {
 app.get('*', function(req, res) {
   res.sendFile(path.resolve(__dirname, '../client/index.html'));
 });
-
 
 // Requests that get this far won't be handled
 // by any middleware. Convert them into a 404 error

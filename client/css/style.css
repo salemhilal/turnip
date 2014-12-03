@@ -13,7 +13,7 @@ body {
 }
 
 .facebook-signin { 
-  color: white;
+  font-weight: 400;
   position: absolute;
   display: block;
   box-sizing: border-box;
@@ -37,4 +37,22 @@ body {
 .facebook-signin:visited {
   text-decoration: none;
   color: white;
-};
+}
+
+.turnip-input {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  border-top:  none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid #979797;
+  margin: 0 0 24px;
+}
+
+.registration .input-container {
+  margin: 40px auto 0;
+  padding: 0 40px;
+}
