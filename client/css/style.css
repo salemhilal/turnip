@@ -52,7 +52,30 @@ body {
   margin: 0 0 24px;
 }
 
+.registration {
+  padding: 30px 20px 0;
+}
+
 .registration .input-container {
   margin: 40px auto 0;
-  padding: 0 40px;
+  padding: 0 20px;
+}
+
+.registration .gender {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.registration .male {
+  margin: 0 5%;
+}
+
+.registration .gender .active {
+  border-bottom: 4px solid #979797; 
+}
+
+.registration .next {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
 }

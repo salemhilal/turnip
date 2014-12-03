@@ -27,3 +27,6 @@ client/vendor
 
 # Users Environment Variables
 .lock-wscript
+
+# Database file
+db.json

@@ -72,7 +72,7 @@ for (var s in config) {
 app.get('/auth/account', function(req, res) {
   res.cookie('user-access-token', req.signedCookies['access_token']);
   res.cookie('user-id', req.user.id);
-  res.redirect('/turnip/registration');
+  res.redirect('/turnip/login');
 });
 
 // Convenience endpoint to help with keeping users logged in

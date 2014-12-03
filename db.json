@@ -3,7 +3,7 @@
     "userCredential": 1,
     "userIdentity": 2,
     "user": 2,
-    "AccessToken": 9,
+    "AccessToken": 11,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
@@ -12,7 +12,7 @@
   "models": {
     "userCredential": {},
     "userIdentity": {
-      "1": "{\"provider\":\"facebook-login\",\"authScheme\":\"oAuth 2.0\",\"externalId\":\"10152986062291414\",\"profile\":{\"id\":\"10152986062291414\",\"displayName\":\"Salem Hilal\",\"name\":{\"familyName\":\"Hilal\",\"givenName\":\"Salem\"},\"gender\":\"male\",\"profileUrl\":\"https://www.facebook.com/app_scoped_user_id/10152986062291414/\",\"emails\":[{\"value\":\"salemhilal@gmail.com\"}],\"provider\":\"facebook\",\"_raw\":\"{\\\"id\\\":\\\"10152986062291414\\\",\\\"email\\\":\\\"salemhilal\\\\u0040gmail.com\\\",\\\"first_name\\\":\\\"Salem\\\",\\\"gender\\\":\\\"male\\\",\\\"last_name\\\":\\\"Hilal\\\",\\\"link\\\":\\\"https:\\\\/\\\\/www.facebook.com\\\\/app_scoped_user_id\\\\/10152986062291414\\\\/\\\",\\\"locale\\\":\\\"en_US\\\",\\\"name\\\":\\\"Salem Hilal\\\",\\\"timezone\\\":-5,\\\"updated_time\\\":\\\"2014-10-04T15:18:33+0000\\\",\\\"verified\\\":true}\",\"_json\":{\"id\":\"10152986062291414\",\"email\":\"salemhilal@gmail.com\",\"first_name\":\"Salem\",\"gender\":\"male\",\"last_name\":\"Hilal\",\"link\":\"https://www.facebook.com/app_scoped_user_id/10152986062291414/\",\"locale\":\"en_US\",\"name\":\"Salem Hilal\",\"timezone\":-5,\"updated_time\":\"2014-10-04T15:18:33+0000\",\"verified\":true}},\"credentials\":{\"accessToken\":\"CAAFQLY3S4XQBAO6nQ9X3cE8IybhRvh7701VZBvUgMLdZBTX3ZBJVjbW3dkZBzZCH7kqZCMxApcjZBpqWwHF8kipcrSyQ1V7MPvJWfmfBZBqGrXvNbgRx91Q69BdxozLh9S5GMKOlUVomtHiLggUYZAZBoPf3aS2a5u5D3Ic7MzhrGtzEx2THyheWdrHKcaxdr1DV0zk0mEKNNFHRRh2LisMJZAB\"},\"created\":\"2014-12-03T03:25:25.029Z\",\"modified\":\"2014-12-03T21:53:40.305Z\",\"id\":1,\"userId\":1}"
+      "1": "{\"provider\":\"facebook-login\",\"authScheme\":\"oAuth 2.0\",\"externalId\":\"10152986062291414\",\"profile\":{\"id\":\"10152986062291414\",\"displayName\":\"Salem Hilal\",\"name\":{\"familyName\":\"Hilal\",\"givenName\":\"Salem\"},\"gender\":\"male\",\"profileUrl\":\"https://www.facebook.com/app_scoped_user_id/10152986062291414/\",\"emails\":[{\"value\":\"salemhilal@gmail.com\"}],\"provider\":\"facebook\",\"_raw\":\"{\\\"id\\\":\\\"10152986062291414\\\",\\\"email\\\":\\\"salemhilal\\\\u0040gmail.com\\\",\\\"first_name\\\":\\\"Salem\\\",\\\"gender\\\":\\\"male\\\",\\\"last_name\\\":\\\"Hilal\\\",\\\"link\\\":\\\"https:\\\\/\\\\/www.facebook.com\\\\/app_scoped_user_id\\\\/10152986062291414\\\\/\\\",\\\"locale\\\":\\\"en_US\\\",\\\"name\\\":\\\"Salem Hilal\\\",\\\"timezone\\\":-5,\\\"updated_time\\\":\\\"2014-10-04T15:18:33+0000\\\",\\\"verified\\\":true}\",\"_json\":{\"id\":\"10152986062291414\",\"email\":\"salemhilal@gmail.com\",\"first_name\":\"Salem\",\"gender\":\"male\",\"last_name\":\"Hilal\",\"link\":\"https://www.facebook.com/app_scoped_user_id/10152986062291414/\",\"locale\":\"en_US\",\"name\":\"Salem Hilal\",\"timezone\":-5,\"updated_time\":\"2014-10-04T15:18:33+0000\",\"verified\":true}},\"credentials\":{\"accessToken\":\"CAAFQLY3S4XQBANNBeAm5ZCWIW7LpMpk1OnqdXjriZA778aO4TE3WhP9HhkSQWS8PQOiZBeJZA7LbyRpJgne0AsB8yBaMgZCI45V4po1u0ebMz7YEFX5wY7TaTUtFrh0nqU3Sp3UaAp2EZBTfXjAczUkHO5ZBiPRhwjHoQGrZB0ZCRyLvArQqVvCrd3BuQBVctJN8ssSwB7PtVQhBmpfYCi5MZA\"},\"created\":\"2014-12-03T03:25:25.029Z\",\"modified\":\"2014-12-03T22:12:42.174Z\",\"id\":1,\"userId\":1}"
     },
     "user": {
       "1": "{\"username\":\"facebook-login.10152986062291414\",\"password\":\"$2a$10$eBP5DiOJvcZsarhtFsypmOX.Npnm14CYwyCF9/88cVAv.ufwSR3SG\",\"email\":\"salemhilal@gmail.com\",\"id\":1}"
@@ -25,7 +25,9 @@
       "Kerd2lnDcplQSevdYwpg6ZmuFE5ztH2qZTUjhEvBEjESdjJBHlEYXsqPyGKgcEBu": "{\"id\":\"Kerd2lnDcplQSevdYwpg6ZmuFE5ztH2qZTUjhEvBEjESdjJBHlEYXsqPyGKgcEBu\",\"ttl\":1209600,\"created\":\"2014-12-03T05:10:19.019Z\",\"userId\":1}",
       "DGWAmzm99FftrkTfRYEH7bAajcbyXeaP092o91DFpDg895PLUJdJLA35FVQVnF22": "{\"id\":\"DGWAmzm99FftrkTfRYEH7bAajcbyXeaP092o91DFpDg895PLUJdJLA35FVQVnF22\",\"ttl\":1209600,\"created\":\"2014-12-03T05:11:22.860Z\",\"userId\":1}",
       "wnhFzwE48ueXZ8NakUcw7NN4UU7555L8LYyexZiKgGzGRQsqecC628QFrQJIqsMj": "{\"id\":\"wnhFzwE48ueXZ8NakUcw7NN4UU7555L8LYyexZiKgGzGRQsqecC628QFrQJIqsMj\",\"ttl\":1209600,\"created\":\"2014-12-03T21:52:18.561Z\",\"userId\":1}",
-      "8FSaHcWbnmo9pT5s9VZAGFkA8n4QXVXADZdliGUDauTxtHVWtMxWnUSJofFvt2zt": "{\"id\":\"8FSaHcWbnmo9pT5s9VZAGFkA8n4QXVXADZdliGUDauTxtHVWtMxWnUSJofFvt2zt\",\"ttl\":1209600,\"created\":\"2014-12-03T21:53:40.309Z\",\"userId\":1}"
+      "8FSaHcWbnmo9pT5s9VZAGFkA8n4QXVXADZdliGUDauTxtHVWtMxWnUSJofFvt2zt": "{\"id\":\"8FSaHcWbnmo9pT5s9VZAGFkA8n4QXVXADZdliGUDauTxtHVWtMxWnUSJofFvt2zt\",\"ttl\":1209600,\"created\":\"2014-12-03T21:53:40.309Z\",\"userId\":1}",
+      "ldcbCdqW7HnsoGiWEM7YE54j7yvFVg8crcoWBBcnFSrXyuHTk3HzF7eBEzeSC3Bp": "{\"id\":\"ldcbCdqW7HnsoGiWEM7YE54j7yvFVg8crcoWBBcnFSrXyuHTk3HzF7eBEzeSC3Bp\",\"ttl\":1209600,\"created\":\"2014-12-03T22:06:18.946Z\",\"userId\":1}",
+      "oE23ei8Z0WcywvZCXBW6Hc9SADlulQZluPK62aysSqbbHgqvtgnxHAfYmAYHCo1W": "{\"id\":\"oE23ei8Z0WcywvZCXBW6Hc9SADlulQZluPK62aysSqbbHgqvtgnxHAfYmAYHCo1W\",\"ttl\":1209600,\"created\":\"2014-12-03T22:12:42.178Z\",\"userId\":1}"
     },
     "ACL": {},
     "RoleMapping": {},

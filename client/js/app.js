@@ -42,6 +42,13 @@ angular
         resolve: {
           loggedin: checkLoggedIn
         }
+      })
+      .state('logIn', {
+        url: '/turnip/login',
+        controller: 'LogInCtrl',
+        resolve: {
+          loggedin: checkLoggedIn
+        }
       });
 
     // $routeProvider.when('/auth/facebook', 'facebookAuth')

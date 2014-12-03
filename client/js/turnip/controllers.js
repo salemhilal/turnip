@@ -6,6 +6,15 @@ angular
               function($scope, $state) {
 
   }])
+  .controller('LogInCtrl', 
+              ['$scope', 'LoopBackAuth', '$cookies', '$location',
+              function($scope, LoopBackAuth, $cookies, $location) {
+    LoopBackAuth.currentUserId = $cookies['user-id'];
+    LoopBackAuth.accessTokenId = $cookies['user-access-token'];
+    LoopBackAuth.rememberMe = false;
+    LoopBackAuth.save();
+    $location.url('/turnip/registration');
+  }])
   .controller('RegistrationCtrl',
               ['$scope', '$state', 'User', 'LoopBackAuth', '$cookies', '$http',
               function($scope, $state, User, LoopBackAuth, $cookies, $http) {
@@ -14,7 +23,6 @@ angular
     LoopBackAuth.accessTokenId = $cookies['user-access-token'];
     LoopBackAuth.rememberMe = false;
     LoopBackAuth.save();
-    console.log(LoopBackAuth);
 
     $http.get('/loggedin')
       .success(function(data) {console.log('logged in', data);})
